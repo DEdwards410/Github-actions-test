@@ -7,9 +7,8 @@ jobs:
     runs on: ubuntu-latest
     steps: 
      - name: echo a string
-       run: echo "Hello World I am great"
+       run: echo "Hello World I am the greatest of them all"
      - name: Multiline script running below 
        run: | 
          node -v
          npm -v
-         
