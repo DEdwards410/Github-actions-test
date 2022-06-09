@@ -3,7 +3,7 @@ name: Shell commands
 on: [push]
 
 jobs:
-  First Shell command:
+  First-Shell-command:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
@@ -18,7 +18,7 @@ jobs:
           print(platform.processor())
           print("this script is finished!")
         shell: python
-  Run Windows Commands:
+  Run-Windows-Commands:
     runs-on: windows-latest
     steps:
       - name: Directory Powershell
