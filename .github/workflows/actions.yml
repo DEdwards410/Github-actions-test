@@ -6,6 +6,16 @@ jobs:
   First-Action-Command:
     runs-on: ubuntu-latest
     steps:
+      - name: Working directory
+        run: |
+          pwd
+          ls -larth
+          date
+      - name: Checkout
+        id: Checkout
+        uses: actions/checkout@v3
+        run: ls -larth
+
       - name: Simple Action
         id: greeting
         uses: actions/hello-world-javascript-action@v1
