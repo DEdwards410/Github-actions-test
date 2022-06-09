@@ -25,8 +25,8 @@ jobs:
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
           echo "${{github.token}}"
-          git clone git@github:$GITHUB_REPOSITORY
-          git checkout $GITHUB_SHA
+        #    git clone git@github:$GITHUB_REPOSITORY
+        #    git checkout $GITHUB_SHA
       ##Above is the 1.Commit ID env variable, 2. Github Repo, 3. Workspace 4.Reference of the
       - name: Simple Action
         id: greeting
