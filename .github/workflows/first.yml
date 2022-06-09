@@ -1,21 +1,28 @@
 name: Shell commands
-  
+
 on: [push]
 
-jobs: 
-  run-shell-command:
+jobs:
+  First Shell command:
     runs-on: ubuntu-latest
-    steps: 
-     - name: echo a string
-       run: echo "Hello World I am the greatest of them all"
-     - name: Multiline script running below 
-       run: | 
-         node -v
-         npm -v
-     - name: Python commands
-       run: |
-         import platform
-         print(platform.processor())
-         print("this script is finished!")
-       shell: python
-
+    steps:
+      - name: echo a string
+        run: echo "Hello World I am the greatest of them all"
+      - name: Multiline script running below
+        run: |
+          node -v
+          npm -v
+      - name: Python commands
+        run: |
+          import platform
+          print(platform.processor())
+          print("this script is finished!")
+        shell: python
+  Run Windows Commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-Location
+      - name: Directory Bash
+        run: pwd
+        shell: bash
