@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         id: Checkout
         uses: actions/checkout@v3
-      - name: Working directory
+      - name: Working directory after checkout
         run: |
           pwd
           ls -larth
